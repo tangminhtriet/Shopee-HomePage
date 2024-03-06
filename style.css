@@ -1,0 +1,68 @@
+
+
+
+:root {
+    --primary-color : #fa5030;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, 文泉驛正黑, "WenQuanYi Zen Hei", "Hiragino Sans GB", "儷黑 Pro", "LiHei Pro", "Heiti TC", 微軟正黑體, "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  padding-left: 16rem;
+  padding-right: 16rem;
+}
+
+.app__header--pc {
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 12rem;
+}
+
+.container__app__header--pc {
+  height: inherit;
+  margin: 0;
+}
+
+.navbar__header--pc {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  padding-top: 0.8rem;
+}
+
+.navbar--left__header--pc,
+.navbar--right__header--pc {
+  display: flex;
+}
+
+.navbar__item {
+  position: relative;    
+  margin-right: 2rem;
+}
+
+
+.navbar__item--left::after {
+  position: absolute;
+  content: "";
+  height: 1rem;
+  width: 0.1rem;
+  display: block;
+  background-color: #ccc;
+  top: 5px;
+  right: -12px;
+}
+
+.navbar__item--last-left::after {
+  display: none;
+}
