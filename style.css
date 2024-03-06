@@ -11,6 +11,7 @@ html {
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, 文泉驛正黑, "WenQuanYi Zen Hei", "Hiragino Sans GB", "儷黑 Pro", "LiHei Pro", "Heiti TC", 微軟正黑體, "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+  height: 1000rem;
 }
 
 a {
@@ -22,8 +23,9 @@ a {
 .app__header--pc {
     background-color: var(--primary-color);
     width: 100%;
-    height: 12rem;
+    height: 12.2rem;
     margin: 0 auto;
+    position: fixed;
 }
 
 .container {
@@ -81,6 +83,16 @@ a {
   display: none;
 }
 
+.navbar__item:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.navbar__item--last-left:hover {
+    opacity: 1;
+    cursor:text
+}
+
 .user-name {
     margin-left: -1rem;
     font-size: 1.3rem;
@@ -121,6 +133,13 @@ a {
     border-radius: 2px;
 }
 
+.btn-search:hover {
+    color: white;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    opacity: 0.8;
+}
+
 .cart--icon {
     color: white;
     height: 2.6rem;
@@ -158,4 +177,119 @@ a {
 
 .product__item:first-child {
     margin-left: -2rem;
+}
+/* DropDown */
+.navbar__item--download {
+    position: relative;
+}
+
+
+.navbar__item--download:hover {
+    opacity: 1;
+}
+
+.navbar__item--download:hover .download--dropdown {
+    display: block;
+}
+
+
+.download--dropdown::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 20rem;
+    height: 3rem;
+    right: 0rem;
+    top: -2rem;
+}
+
+.download--dropdown {
+   position: absolute;
+   background-color: white;
+   width: 18rem;
+   height: 24rem;
+   top: 3.5rem;
+   border-radius: 0.2rem;
+   display: none;
+}
+.download__qr--wrap {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.download__options {
+    display: flex;
+    flex-wrap: wrap;
+}
+.dowload-item {
+    margin-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: black;
+}
+/* Language */
+.navbar__item--language {
+    position: relative;
+}
+
+.navbar__item--language:hover {
+    opacity: 1;
+}
+
+
+.navbar__item--language:hover .select-language {
+    display: block;
+}
+
+
+.select-language {
+    position: absolute;
+    background-color: white;
+    width: 20rem;
+    left: -10rem;
+    top: 2.5rem;
+    border-radius: 0.2rem;
+    display: none;
+}
+
+.select-language::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    right: 4rem;
+    top: -0.7rem;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 11px solid white;
+}
+
+
+.select-language::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 20rem;
+    height: 3rem;
+    right: 0rem;
+    top: -1.7rem;
+    
+}
+
+
+.language__list {
+    color: black;
+    height: 5rem;
+    list-style: none;
+    text-decoration: none;
+}
+
+.language__item {
+    padding: 1rem;
+}
+
+.language__item:hover {
+    color: var(--primary-color);
 }
