@@ -18,23 +18,20 @@ a {
   color: white;
 }
 
-.container {
-  padding-left: 16rem;
-  padding-right: 16rem;
-}
 
 .app__header--pc {
     background-color: var(--primary-color);
     width: 100%;
     height: 12rem;
+    margin: 0 auto;
 }
 
-.container__app__header--pc {
-  height: inherit;
-  margin: 0;
+.container {
+    margin: 0 auto;
+    width: 120rem;
 }
 
-.navbar__header--pc {
+.header__navbar--pc {
   display: flex;
   justify-content: space-between;
   font-size: 1.3rem;
@@ -49,6 +46,7 @@ a {
 .navbar__item {
   position: relative;    
   margin-right: 2rem;
+  color: white;
 }
 
 
@@ -63,6 +61,101 @@ a {
   right: -12px;
 }
 
+
+.navbar__item--last-left {
+    align-items: center;
+    display: flex; 
+    color: white;
+}
+
+.navbar__item--last-left > a {
+    margin-left: 0.5rem;
+}
+
+.navbar__item--last-left > svg:last-child {
+    color: white;
+    margin-left: 1rem;
+}
+
 .navbar__item--last-left::after {
   display: none;
+}
+
+.user-name {
+    margin-left: -1rem;
+    font-size: 1.3rem;
+}
+
+.header__withSearch--pc {
+    margin-top: 2rem;
+}
+
+.header__withSearch__logo {
+    height: 5rem;
+    width: 16.2rem;
+}
+
+.header__search {
+    width: 84rem;
+    height: 4.1rem;
+    background-color: white;
+    border-radius: 2px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin-top: 0.4rem;
+}
+
+.header__seach--input {
+    width: 93%;
+    height: 100%;
+    font-size: 1.5rem;
+    border: none;
+    padding: 1rem;
+}
+
+.btn-search {
+    background-color: var(--primary-color);
+    padding: 1rem 1.9rem;
+    color: white;
+    border-radius: 2px;
+}
+
+.cart--icon {
+    color: white;
+    height: 2.6rem;
+    width: 2.6rem;
+    top: 1.8rem;
+    right: 1rem;
+    position: relative;
+}
+
+.cart--icon__wrap {
+    position: relative;
+}
+
+.cart--quantity {
+    position: absolute;
+    color: var(--primary-color);
+    background-color: white;
+    padding: 0 0.5rem ;
+    border-radius: 40%;
+    font-size: 1.3rem;
+    top: 1.1rem;
+    right: 6rem;
+}
+
+.product__list {
+    display: flex;
+    list-style: none;
+    font-size: 1.2rem;
+    margin-top: 0.2rem;
+}
+
+.product__item {
+    margin-left: 1.5rem;
+}
+
+.product__item:first-child {
+    margin-left: -2rem;
 }
