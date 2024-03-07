@@ -12,7 +12,7 @@ html {
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, 文泉驛正黑, "WenQuanYi Zen Hei", "Hiragino Sans GB", "儷黑 Pro", "LiHei Pro", "Heiti TC", 微軟正黑體, "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
   height: 1000rem;
-  background-color: sienna;
+  background-color: #fff;
 }
 
 a {
@@ -210,7 +210,7 @@ ul {
 }
 
 .download--dropdown {
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
    position: absolute;
    background-color: white;
    width: 18rem;
@@ -218,9 +218,6 @@ ul {
    top: 3.5rem;
    border-radius: 0.2rem;
    display: none;
-   transform-origin: top right 10px;
-    animation: headerCartGrowth ease-in 0.1s;
-    will-change: opacity, transfrom;
 }
 .download__qr--wrap {
 
@@ -557,4 +554,64 @@ ul {
     height: 3rem;
     right: 0rem;
     top: -1.7rem;
+}
+.header__account {
+    margin-right: 0;
+}
+
+/* Body */
+.app__body--pc {
+    /* margin-top: 12.2rem; */
+}
+.container__app__body--pc {
+    background-color: #fff;
+    height: 60rem;
+}
+.wraper__banner {
+    padding-top: 3rem;
+    display: flex;
+    align-items: center;
+}
+.banner__img {
+    width: 100%;
+}
+
+.space-for__header--fixed {
+    height: 12.2rem;
+}
+.banner__vouchers {
+    margin-top: 4rem;
+
+}
+.btn__voucher--icon {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    padding: 1.4rem;
+    margin: 0 auto;
+}
+.wrapper__btn__voucher {
+    display: flex;
+    justify-content: center;
+}
+.wrapper__voucher--name {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.banner__voucher--name {
+    font-size: 1.3rem;
+    width: 8.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+.btn__voucher--icon:hover {
+    border: 1px solid #ccc;
+
+}
+.banner__voucher:hover {
+    position: relative;
+    top: -3px;
+    cursor: pointer;
 }
