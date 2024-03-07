@@ -210,6 +210,7 @@ ul {
 }
 
 .download--dropdown {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
    position: absolute;
    background-color: white;
    width: 18rem;
@@ -253,6 +254,7 @@ ul {
 
 
 .select-language {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     position: absolute;
     background-color: white;
     width: 20rem;
@@ -316,6 +318,7 @@ ul {
     cursor: pointer;
 }
 .cart__wrap--added {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     position: absolute;
     width: 39rem;
     top: 5.5rem;
@@ -442,6 +445,7 @@ ul {
     top: 2.5rem;
     left: -33rem;
     display: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .dropdown__noti__header {
     background-color: #fff;
@@ -503,4 +507,54 @@ ul {
     transform-origin: 100% top;
     animation: headerCartGrowth ease-in 0.2s;
     will-change: opacity, transfrom;
+}
+/* Dropdown Account */
+.header__account {
+    position: relative;
+}
+.dropdown__account {
+    position: absolute;
+    background-color: white;
+    top: 3rem;
+    right: 0rem;
+    width: 15rem;
+    display: none;
+    z-index: 1;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.header__account:hover .dropdown__account {
+    opacity: 1;
+    display: block;
+
+}
+.header__account:hover {
+    opacity: 1;
+}
+.account__options {
+    padding: 0.8rem 1rem;
+}
+.account__options > a {
+    color: black;
+    font-weight: 500;
+}
+.dropdown__account::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    right: 4rem;
+    top: -0.7rem;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 11px solid white;
+}
+.dropdown__account::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 16rem;
+    height: 3rem;
+    right: 0rem;
+    top: -1.7rem;
 }
