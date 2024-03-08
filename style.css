@@ -32,6 +32,7 @@ ul {
     height: 12.2rem;
     margin: 0 auto;
     position: fixed;
+    z-index: 1;
 }
 
 .container {
@@ -580,7 +581,9 @@ ul {
 }
 .banner__vouchers {
     margin-top: 4rem;
-
+}
+.banner__vouchers:last-child {
+    margin-bottom: 2rem;
 }
 .btn__voucher--icon {
     background-color: white;
@@ -620,6 +623,8 @@ ul {
 }
 .body__container {
     padding-top: 2rem;
+    z-index: 0;
+    position: relative;
 }
 .wrapper__category {
     position: relative;
@@ -630,7 +635,7 @@ ul {
     color: rgba(0, 0, 0, .54);
     font-weight: 500;
     border-bottom: 1px solid #f5f5f5;
-    padding: 0.8rem 0 0.8rem 1rem;
+    padding: 2rem 0 2rem 1rem;
 }
 .category__option {
     border: 1px solid #f5f5f5;
@@ -660,6 +665,7 @@ ul {
     text-overflow: ellipsis;
     text-align: center;
     padding-bottom: 1.8rem;
+    font-size: 1.3rem;
 }
 .category__option:first-child {
     border-left: none;
@@ -672,6 +678,166 @@ ul {
     margin-right: 0;
 }
 .category__btn__arrow--right {
+    position: absolute;
+    top: 16.9rem;
+    right: -1.5rem;
+    background-color: #fff;
+    padding: 0.5rem;
+    border-radius: 100%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px -7px 50px 11px;
+}
+/* Flash Sale */
+.wrapper__flashSale {
+    background-color: white;
+    margin-top: 2rem;
+    position: relative;
+}
+.flashSale__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0 2rem 2rem;
+}
+.flashSale__header--left {
+    display: flex;
+}
+.flashSale__clock__coutdown {
+    display: flex;
+    margin-left: 0.6rem;
+}
+.flashSale__header--text {
+    font-size: 2rem;
+    color: #ee4d2d;
+    font-weight: 800;
+}
+.flashSale__text--lighting {
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+.flashSale__header--text--sale {
+    font-weight: 600;
+    opacity: 0.9;
+}
+.flashSale__clock__coutdown {
+    display: flex;
+    align-items: center;
+    margin-top: 0.2rem;
+}
+.flashSale__clock__coutdown--item {
+    background-color: black;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    color: white;
+    font-size: 1.3rem;
+    margin-right: 0.5rem;
+    font-weight: 700;
+    border-radius: .2rem;
+    align-items: center;
+    line-height: 1.25;
+}
+.flashSale__header--right {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    padding-right: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.flashSale__header--right > span {
+   margin-right: 0.2rem;
+}
+.flashSale__main {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-bottom: 2rem;
+}
+.row__flashSale {
+    width: 250;
+}
+.flashSale__item--img {
+    width: 100%;
+}
+.flashSale__item--price{
+    margin-top: 1.6rem;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 0.2rem;
+}
+.flashSale__item--topSeller {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    background-color: #ffbda6;
+    color: white;
+    border-radius: 8px;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+.topSellerRed {
+    position: absolute;
+    height: 1.8rem;
+    width: 1.8rem;
+    top: 0;
+    left: 0;
+    border-radius: 8px 0px 0px 8px;
+    background-color: var(--primary-color);
+}
+.col__flashSale--item {
+    position: relative;
+}
+.flashSale__item--selloff {
+    position: absolute;
+    top: 0;
+    right: 1.5rem;
+    background-color: #ffe97a;
+    color: var(--primary-color);
+    padding-left: 1rem;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+}
+.flashSale__item--selloff > span {
+    margin-left: 1rem;
+}
+.flashSale__item--MALL {
+    color: white;
+    background-color: rgb(208, 1, 27);
+    position: absolute;
+    top: 0.825rem;
+    left: 1.2rem;
+    font-size: 1.3rem;
+    display: flex;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.stickyMall {
+    position: absolute;
+    bottom: -12px;
+    left: -0.2px;
+    width: 0;
+    height: 12px;
+    border-top: 5px solid rgb(208, 1, 27);
+    border-left: 5px solid transparent;
+}
+.flashSale__item--liked {
+    position: absolute;
+    bottom: -12px;
+    left: -0.2px;
+    width: 0;
+    height: 12px;
+    border-top: 5px solid red;
+    border-left: 5px solid transparent;
+}
+
+
+.flashSale__btn__arrow--right {
     position: absolute;
     top: 16.9rem;
     right: -1.5rem;
