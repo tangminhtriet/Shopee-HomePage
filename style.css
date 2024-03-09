@@ -3,6 +3,7 @@
 
 :root {
     --primary-color : #fa5030;
+    --second--color : #ee4d2d;
 }
 
 html {
@@ -1134,4 +1135,128 @@ img {
 }
 .wrapper__topsearch:hover .topsearch__btn__arrow--left {
    scale: 2;
+}
+.wrapper__sugtoday {
+    background-color: white;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6.4rem;
+    border-bottom: 4px solid #ee4d2d;
+}
+.sugtoday__text {
+    text-transform: uppercase;
+    color: #ee4d2d;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+/* Panels */
+.wrap__panels {
+}
+.panels__row {
+    margin-left: 0.15rem;
+    margin-right: 0.15rem;
+}
+.panel {
+    position: relative;
+    margin-top: 1rem;
+}
+.panel--img {
+    width: 100%;
+}
+.wrapper__panel__about {
+    background: white;
+}
+.panel__space {
+    min-height: 2rem;
+}
+.panel__about {
+    padding: 0.8rem;
+    font-size: 1.4rem;
+    position: relative;
+}
+.panel__name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-height: 2;        
+    max-height: 4;   
+}
+.panel__pricesold {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    font-size: 1.6rem;
+}
+.panel__price {
+    color: var(--second--color);
+}
+.panel__sold {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, .54118);
+    display: flex;
+}
+.panel__special {
+    position: absolute;
+    width: 100%;
+    bottom: 116px;
+    left: 8px;
+}
+.panel__liked {
+    position: absolute;
+    top: 0;
+    left: 3px;
+    color: #fff;
+    background-color: var(--second--color);
+    padding: 0.2rem;
+    display: flex;
+    align-items: center;
+    top: 10px;
+}
+.panel__selloff--sticky {
+    position: absolute;
+    background-color: #ffe97a;
+    color: var(--second--color);
+    right: 0.78rem;
+    top: 0;
+    padding: 0.2rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+}
+.stickyLiked {
+    position: absolute;
+    bottom: -12px;
+    left: 0.2px;
+    width: 0;
+    height: 12px;
+    border-top: 5px solid rgb(208, 1, 27);
+    border-left: 5px solid transparent;
+}
+.panel__selloff {
+    position: absolute;
+    color: white;
+    background-color: #ff7b39;
+    bottom: 3.5rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.panel__sellingwell--on {
+    position: absolute;
+    color: #d0011b;
+    bottom: 3.5rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #d0011b;
 }
