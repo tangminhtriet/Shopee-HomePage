@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<style>
+#myDIV {
+  height: 250px;
+  width: 250px;
+  overflow: hidden;
+}
+
+#content {
+  height: 800px;
+  width: 2000px;
+  background-color: coral;
+  display: flex;
+}
+li {
+    margin-left: 1rem;
+}
+</style>
+
+<body>
+<h1>The Element Object</h1>
+<h2>The scrollTop and scrollLeft Properties</h2>
+
+<p>Click "Scroll" to scroll the contents of "myDIV" to 50px horizontally and 10px vertically.</p>
+
+<button onclick="myFunctionL()">ScrollL</button><br><br>
+
+<button onclick="myFunctionR()">ScrollR</button><br><br>
+
+<ul id="myDIV">
+  <div id="content">
+  <li>Some text inside a div element.</li>
+  <li>Hello cac ban</li>
+  <li>Chuc buoi toi</li>
+  <li>asdaweawe</li>
+  </div>
+</ul>
+
+<script>
+function myFunctionL() {
+  const element = document.getElementById("myDIV");
+  element.scrollLeft = 500;
+}
+
+function myFunctionR() {
+  const element = document.getElementById("myDIV");
+  element.scrollLeft = -500;
+}
+</script>
+
+</body>
+</html>
