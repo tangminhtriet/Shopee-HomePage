@@ -12,7 +12,6 @@ html {
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, 文泉驛正黑, "WenQuanYi Zen Hei", "Hiragino Sans GB", "儷黑 Pro", "LiHei Pro", "Heiti TC", 微軟正黑體, "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
-  height: 1000rem;
   background-color: #fff;
 }
 
@@ -20,10 +19,11 @@ a {
   text-decoration: none;
   color: white;
 }
+
 ul {
     padding: 0;
     margin: 0;
-    list-style: none;
+    list-style: none
 }
 img {
     width: 100%;
@@ -567,6 +567,7 @@ img {
 /* Body */
 .app__body--pc {
     /* margin-top: 12.2rem; */
+    border-bottom: 5px solid #d0011b;
 }
 .container__banner--pc {
     background-color: #fff;
@@ -623,12 +624,12 @@ img {
 }
 .body__background {
     background-color: #f5f5f5;
-    height: 400rem;
 }
 .body__container {
     padding-top: 2rem;
     z-index: 0;
     position: relative;
+    padding-bottom: 8rem;
 }
 .wrapper__category {
     position: relative;
@@ -1113,6 +1114,7 @@ img {
     border-radius: 100%;
     box-shadow: rgba(100, 100, 111, 0.2) 0px -7px 50px 11px;
     z-index: 1;
+    cursor: pointer;
 }
 .topsearch__btn__arrow--left {
     position: absolute;
@@ -1123,6 +1125,7 @@ img {
     border-radius: 100%;
     box-shadow: rgba(100, 100, 111, 0.2) 0px -7px 50px 11px;
     z-index: 1;
+    cursor: pointer;
 }
 .topsearch__btn__arrow {
     width: 2.5rem;
@@ -1153,6 +1156,7 @@ img {
 }
 /* Panels */
 .wrap__panels {
+    margin-bottom: 3rem;
 }
 .panels__row {
     margin-left: 0.15rem;
@@ -1259,4 +1263,252 @@ img {
     align-items: center;
     justify-content: center;
     border: 1px solid #d0011b;
+}
+/* END PANEL */
+.wrap__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn__more--panels {
+    background-color: white;
+    color: #555;
+    width: 39rem;
+    height: 4rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    font-size: 1.4rem;
+}
+/* footer */
+.footer__shopee--background--background {
+    background-color: #fff;
+    font-family: Roboto,sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+.wrap__footer__shopee--about {
+    margin-top: 6rem;
+    padding-bottom: 6rem;
+    border-bottom:  solid rgba(0, 0, 0, .09);
+}
+.px14fw700 {
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+.px12fw700 {
+    font-weight: 700;
+}
+.mt1 {
+    display: block;
+    margin-top: 1rem;
+}
+.fw700 {
+    font-weight: 700;
+}
+.underline {
+    text-decoration: underline;
+}
+.mt15 {
+    margin-top: 1.5rem;
+}
+.mt2 {
+    margin-top: 2rem;
+}
+.list__style {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.wrap__footer__shopee__category {
+    margin-top: 6rem;
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, .54);
+}
+.social__link {
+    
+}
+.footer__shopee__category {
+    font-weight: 700;
+}
+.footer__shopee__lists {
+    padding: 1rem
+
+}
+
+.footer__shopee__list--item {
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+.footer__shopee__list--name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+.col-24 {
+    width: 20%;
+}
+.wrap__footer__shopee__lists {
+    margin-bottom: 7rem;
+}
+.wrap__footer--service {
+    height: 20rem;
+    background-color: #ccc;
+}
+
+/* footer__inf */
+.wrap__footer--inf {
+    background-color: #fbfbfb;
+    color: rgba(0, 0, 0, .65);
+    font-size: 1.2rem;
+}
+.footer__list--inf {
+    border-bottom: 1px solid #ccc;
+}
+.footer--inf {
+    padding-top: 4rem;
+    /* border-bottom: 1px solid #ccc ; */
+}
+.footer__inf--name {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-bottom: 2rem;
+}
+.footer__inf--item {
+    margin-bottom: 1.1rem;
+}
+
+.phuong-thuc__list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 25rem;
+    margin-bottom: 2.8rem;
+}
+.footer__inf--item--link {
+    color: #555;
+}
+.link__item {
+    background-color: white;
+    width: 5.75rem;
+    height: 2.875rem; 
+    margin: 0.2rem;
+    display: flex;
+    align-items: center;
+}
+.footer__inf--download {
+    display: flex;
+    align-items: center;
+}
+.footer__inf--item--download__app-store {
+    margin-left: -0.7rem;
+    padding-bottom: 1rem;
+    display: block;
+}
+.footer__inf--item--download__gallery {
+    margin-left: -0.7rem;
+    padding-top: 1rem;
+    display: block;
+}
+
+
+
+.footer-copyright {
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+}
+
+.copyright__introduce {
+    font-size: 1.4rem;
+    display: flex;
+    opacity: 0.5;
+}
+
+.copyright__country {
+    display: flex;
+}
+
+.country-list {
+    display: flex;
+}
+
+.copyright__country > span {
+    margin-left: 5rem;
+    margin-right: 1rem;
+}
+
+.country-item {
+    padding-right: 0.5rem;
+    border-right: 1px solid rgba(0,0,0,.9);
+    margin-right: 0.5rem;
+}
+.country-item:last-child {
+    border : 0;
+}
+.footer__country {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    margin-top: 5rem;
+    padding-bottom: 5rem;
+}
+.wrap__footer--policy {
+    background-color: #f5f5f5;
+    color: rgba(0, 0, 0, .54);
+}
+.footer__policy {
+    padding-top: 5rem;
+}
+.footer__policy-item {
+    color: rgba(0, 0, 0, .54);
+}
+.footer__policy-item {
+    padding-right: 2rem;
+    border-right: 1px solid rgba(0,0,0,.2);
+    margin-right: 3rem;
+}
+.footer-policy-info {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.footer-policy__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-policy__icon {
+    font-size: 5rem;
+    margin-left:  2rem;
+    margin-right:  2rem;
+    margin-bottom: 1rem;
+}
+.footer-policy__icon > i {
+ color: black;
+}
+
+.footer__policy-item:last-child {
+    border : 0;
+}
+
+.footer-adress__header {
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    opacity: 0.8;
+    margin-bottom: 2rem;
+}
+
+.footer-adress__desc {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.8;
+    font-weight: 300;
+}
+.footer-adress {
+    padding-bottom: 5rem;
 }
