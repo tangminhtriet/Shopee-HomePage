@@ -1,0 +1,202 @@
+@media (max-width : 431px) {
+    ::placeholder {
+        color: #ee4d2d;
+    }
+    a {
+        color: black;
+    }
+    .app__pc {
+        display: none;
+    }
+    .app__mobile {
+        display: block;
+        background-color: #efefef;
+        height: 1000rem;
+        overflow: hidden;
+    }
+    .mobile__banner {
+        height: 22.9rem;
+        position: relative;
+    }
+    .banner__img {
+        height: 22.9rem;
+    }
+    .banner__nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+    }
+    .wrapp__input--seacrh {
+        margin-left: 2rem;
+        margin-top: 0.8rem;
+        width: 31rem;
+        background-color: white;
+        margin-right: 2rem;
+        height: 3.6rem;
+        display: flex;
+        align-items: center;
+        border-radius: 0.2rem;
+    }
+    .input--search {
+        border: none;
+        width: 90%;
+        font-size: 1.4rem;
+        border-radius: 0.2rem;
+    }
+    .search__icon--mobile {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .user--banner--mobile {
+        background-color: transparent;
+    }
+    .cart--banner--mobile {
+        position: relative;
+    }
+    .cart__quantity--banner--mobile {
+        color: white;
+        background-color: #ee4d2d;
+        border: 1px solid #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.9rem;
+        position: absolute;
+        padding: 0 0.4rem;
+        top: -0.6rem;
+        left: 0.9rem;
+        text-align: center;
+    }   
+    .banner__dots {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        position: absolute;
+        bottom: 12px;
+        left: 90px;
+        display: flex;
+    }
+    .banner__dot--nor {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    opacity: 1;
+    border: 1px solid rgba(137, 137, 137, 0.4);
+    background-color: rgba(255, 255, 255, 0.4);
+    margin-left: 0.9rem;
+    }
+    .banner__dot--current {
+        background-color: #ee4d2d;
+    }
+    /* voucher */
+
+    .col222 {
+        width: 22.22222%;
+    } 
+    .mobile__voucher {
+        overflow-x: auto;
+        background-color: white;
+        scrollbar-width: none;
+    }
+    .mobile__voucher--row {
+        display: flex;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+    }
+    
+    .mobile__voucher--item {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .mobile__voucher--img {
+        flex-direction: column;
+    }
+    .btn__voucher--icon {
+        padding: 0.8rem
+    }
+    .wrapper__btn__voucher {
+        display: flex;
+
+    }
+    .mobile__voucher--name {
+        font-size: 0.9rem;
+        margin: 0 auto;
+        margin-top: 0.6rem;
+    } 
+    .mobile__img--sunday {
+        padding-top: 1rem;
+        background-color: #fff;
+    }
+    .mobile__flashsale {
+        margin-top: 1rem;
+        background-color: #fff;
+    }
+    .flashSale__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0 1rem 1rem;
+        font-size: 1rem ;
+    }
+    .flashSale__clock__coutdown--item {
+        padding-left: 0.3rem;
+        padding-right: 0.3rem;
+        font-size: 1rem;
+        margin-right: 0.5rem;
+        font-weight: 700;
+        border-radius: .2rem;
+        align-items: center;
+        line-height: 1.2;
+    }
+    .flashSale__main {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .row__flashSale {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        scrollbar-width: none;
+    }
+    .flashSale__item--price{
+        margin-top: 0.2rem;
+        display: flex;
+        justify-content: center;
+        font-size: 1.5rem;
+        color: var(--primary-color);
+        margin-bottom: 0.2rem;
+        font-weight: 700;
+    }
+    .flashSale__item--topSeller {
+        font-size: 1rem;
+        background-color: #ffbda6;
+        color: white;
+        border-radius: 8px;
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+    }
+    .topSellerRed {
+        height: 1.5rem;
+        width: 1.8rem;
+        top: 0;
+        left: 0;
+        border-radius: 8px 0px 0px 8px;
+        background-color: var(--primary-color);
+    }
+    .flashSale__item--MALL {
+        top: 0.825rem;
+        left: 0.2rem;
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+    }
+    .col-30 {
+        width: 30%;
+    }
+    
+}

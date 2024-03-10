@@ -1512,3 +1512,6 @@ img {
 .footer-adress {
     padding-bottom: 5rem;
 }
+.app__mobile {
+    display: none;
+}
