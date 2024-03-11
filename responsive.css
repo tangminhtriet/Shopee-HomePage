@@ -1,4 +1,4 @@
-@media (max-width : 431px) {
+@media (max-width : 600px) {
     ::placeholder {
         color: #ee4d2d;
     }
@@ -11,8 +11,8 @@
     .app__mobile {
         display: block;
         background-color: #efefef;
-        height: 1000rem;
         overflow: hidden;
+        padding-bottom: 5rem;
     }
     .mobile__banner {
         height: 22.9rem;
@@ -162,6 +162,12 @@
         flex-wrap: nowrap;
         overflow-x: scroll;
         scrollbar-width: none;
+        margin-left: 0.5rem;
+    }
+    .col__flashSale--item {
+        border: 1px solid rgba(0, 0, 0, .09);
+        padding-bottom: 1rem;
+        margin-right: 0.8rem;
     }
     .flashSale__item--price{
         margin-top: 0.2rem;
@@ -198,5 +204,399 @@
     .col-30 {
         width: 30%;
     }
+    .col-40 {
+        width: 40%;
+    }
+    .topsearch__header {
+        border-bottom: 0 ;
+    }
+    .topsearch__product {
+        padding-top: 0;
+        padding-bottom: 2rem 
+    }
+    .topsearch__product--name {
+        color: black;
+        font-size: 1.6rem;
+        margin-top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .topsearch__product--quantity {
+        color: #555;
+        font-size: 1rem;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        bottom: 4.7rem;
+        height: 2.5rem;
+        font-weight: 500;
+        background-size: 2rem 2.5rem;
+    }
+    /* topsearch */
+    .mobile__topsearch {
+        background-color: #fff;
+        margin-top: 1rem;
+    }
+    .topsearch__header {
+        justify-content: space-between;
+        color: #ee4d2d;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        height: 6rem;
+        border-bottom: 0;
+    }
+    .topsearch__header--left { 
+        margin-left: -1rem;
+        font-weight: 500;
+    }
+    .topsearch__header--right {
+        color: rgba(0, 0, 0, 0.54);
+        margin-right: -1rem;
+    }
+    .wrap__products {
+        margin-right: 0rem;
+    }
+    .topsearch__products {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+    .col-44--m {
+        width: 44%;
+    }
+    .topsearch__product {
+
+    }
+    .topsearch__product--quantity {
+        color: rgba(0, 0, 0, .54);
+        font-size: 1rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        top: 0;
+        font-weight: 500;
+        margin-left: -6.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        background-color: transparent;
+    }
+    .topsearch__product--name {
+        flex-direction: column;
+        background-color: #f0f0f0;
+    }
+    .topsearch__product--name > span {
+        font-size: 1.4rem;
+        margin-left: -1rem;
+    }
+    .topsearch__product--top {
+        color: white;
+    }
+    .topsearch__product {
+        padding-bottom: 1rem;
+    }
+    /* Shopee Mall */
+    .mobile__shopeMall {
+        margin-top: 1rem;
+        background-color: white;
+    }
+    .shopeeMall__header--m {
+        justify-content: space-between;
+        color: #ee4d2d;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        height: 6rem;
+        border-bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #ee4d2d;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        height: 6rem;
+        border-bottom: 1px solid #ccc;
+    }
+    .shopeeMall__header--m--left { 
+        margin-left: -1rem;
+        font-weight: 500;
+        font-size: 1.6rem;
+        color: #d0011b;
+        text-transform: uppercase;
+    }
+    .shopeeMall__header--m--right {
+        color: rgba(0, 0, 0, 0.54);
+        margin-right: -1rem;
+        font-size: 1.2rem;
+    }
+    .shopeeMall__benifits--m {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 0.8rem;
+        padding-bottom: 0.8rem;
+    }
+    .shopeeMall__benifits--m__img {
+       display: block;
+       margin: 0 auto;
+       width: 41rem;
+       padding-bottom: 1rem;
+    }
+    .shopeeMall--m__dots {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        position: absolute;
+        bottom: 12px;
+        left: 90px;
+        display: flex;
+    }
+    .shopeeMall--m__dot--nor {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    opacity: 1;
+    border: 1px solid rgba(137, 137, 137, 0.4);
+    background-color: rgba(255, 255, 255, 0.4);
+    margin-left: 0.9rem;
+    }
+    .shopeeMall--m__dot--current {
+        background-color: #ee4d2d;
+    }
+    .wrap__shopeeMall__benifits {
+        position: relative;
+    }
+    .shopeeMall__main--m__listproduct {
+        padding-bottom: 1rem;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        scrollbar-width: none;
+        margin-left: 1rem;
+    }
+    .shopeeMall--m__product {
+        height: 16rem;
+        background-image: url(https://down-vn.img.susercontent.com/file/vn-50009109-85797e97fb31583fb99b85283e415821);
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: relative;
+        border: 1px solid #ccc;
+        margin-right: 1rem;
+    }
     
+    .shopeeMall--m__product--inf {
+        color: #d0011b;
+        font-size: 1.2rem;
+        font-weight: 700;
+        position: absolute;
+        bottom: 0.5rem;
+        left: 2rem;
+    }
+    .mobile__live {
+        background-color: white;
+        margin-top: 1rem;
+    }
+    .mobile__live__header { 
+        justify-content: space-between;
+        color: #ee4d2d;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        height: 6rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #ee4d2d;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        height: 6rem;
+        border-bottom: 0;
+    }
+    .mobile__live__header--m--left { 
+        margin-left: -1rem;
+        font-weight: 500;
+        font-size: 1.6rem;
+        color: #ee4d2d;
+        text-transform: uppercase;
+    }
+    .mobile__live__header--m--right {
+        color: rgba(0, 0, 0, 0.54);
+        margin-right: -1rem;
+        font-size: 1.2rem;
+    }
+    .mobile__lives__main {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scrollbar-width: none;
+        margin-left: 1rem;
+        padding-bottom: 1rem;
+    }
+    .mobile__live--item {
+        height: 21.5rem;
+        background-image: url("https://down-vn.img.susercontent.com/file/sg-11134115-7rbmr-lqqift169vno0d");
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-right: 1rem;
+        position: relative;
+    }
+    .col-42--m {
+        width: 40%;
+    }
+    .mobile__live--item--name {
+        position: absolute;
+        font-size: 1.4rem;
+        color: white;
+        bottom: 2.5rem;
+        left: 1rem;
+        font-weight: 500;
+    }
+    .wrap__mobile__live--inf {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        color: white;
+        position: absolute;
+        top: 0.6rem;
+    }
+    .mobile__live--item--isliving {
+        background-color: #ee4d2d;
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .mobile__live--item--isliving > div {
+        margin-left: 0.5rem;
+    }
+    .mobile__live--item--quantity {
+        background-color: black;
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+        font-size: 1rem;
+    } 
+    .mobile__liked {
+        margin-top: 1rem;
+        background-color: white;
+    }
+    .liked__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #ee4d2d;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        height: 6rem;
+        border-bottom: 0;
+    }
+    .liked__header--left {
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        font-weight: 500;
+        margin-left: -1rem;
+    }
+    .liked__header--right {
+        font-size: 1.4rem;
+        display: flex;
+        align-items: center;
+        color: rgba(0, 0, 0, 0.54);
+        margin-right: -1rem;
+    }   
+    /* Liked mobile */
+    .col-52per {
+        width: 52%;
+    }
+    .liked__products {
+        margin-left: 1rem;
+        margin-top: -0.5rem;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+    .liked__product {
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 1rem;
+        border: 1px solid #ccc;
+        background-color: rgba(0, 0, 0, .04);
+        margin-right: 1rem;
+    }
+    .liked__product--name {
+        position: relative;
+        color: rgba(0, 0, 0, .87);
+        font-size: 1.4rem;
+        top: 0.4rem;
+        left: 1rem;
+    }
+    .liked__product--quantity {
+        color: rgba(0, 0, 0, .54);
+        font-size: 1rem;
+        margin-bottom: 1.2rem;
+    }
+    .mobile__catgory { 
+        background-color: #fff;
+        margin-top: 1rem;
+    }
+    .row__category--mobile {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .category__option {
+        border: 0;
+    }
+    .category__body--mobile {
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+    .category__option--m {
+        padding-top: 0;
+    }
+    /* mobile rcm today */
+    .mobile__rcmtoday {
+        background-color: #fff;
+        margin-top: 1rem;
+    }
+    .panel--m {
+        margin-top: 1rem;
+        padding-right: 0.5rem;
+    }
+    .panel__selloff--sticky--m {
+        top: 0;
+        right: 0.5rem;
+    }
+    .panel__special--m {
+        left: 0.3rem;
+    }
+    .panel__liked--m {
+        left: -1px;
+        padding: 0.1rem;
+        top: 5px; 
+    }
+    .panel__name--m {
+        font-size: 1.2rem;
+        line-height: 1.2;
+    }
+    .btn__more--mobile {
+        width: 95%;
+        color: #ee4d2d;
+        background-color: white;
+        border-color: #ee4d2d;
+        margin-left: 1rem;
+        font-size: 1.4rem;
+        padding: 0.5rem 0;
+        margin-top: -1rem;
+    }
 }
