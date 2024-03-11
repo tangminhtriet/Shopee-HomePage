@@ -1,4 +1,4 @@
-@media (max-width : 600px) {
+@media (max-width : 741px) {
     ::placeholder {
         color: #ee4d2d;
     }
@@ -27,11 +27,12 @@
         left: 0;
         display: flex;
         align-items: center;
+        width: 100%;
     }
     .wrapp__input--seacrh {
         margin-left: 2rem;
         margin-top: 0.8rem;
-        width: 31rem;
+        width: 80%;
         background-color: white;
         margin-right: 2rem;
         height: 3.6rem;
